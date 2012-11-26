@@ -14,7 +14,7 @@
     shell:SystemTray.IsVisible="True">
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar IsMenuEnabled="False" Mode="Default">
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting" Click="ApplicationBarIconButton_Click_1"/>
 			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="contact"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>

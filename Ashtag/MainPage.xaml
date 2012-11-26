@@ -21,17 +21,16 @@
 		</DataTemplate>
 	</phone:PhoneApplicationPage.Resources>
 
-
  	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar IsMenuEnabled="False">
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting"/>
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="contact"/>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting" d:IsHidden="True" Click="ApplicationBarIconButton_Click_1"/>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="contact" d:IsHidden="True"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 
     <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">
-        <phone:Panorama Height="731">
+        <phone:Panorama Margin="0,0,0,-3" VerticalAlignment="Bottom" HorizontalAlignment="Right">
 			<phone:Panorama.TitleTemplate>  
 				<DataTemplate>
 					<Image  Margin="0,40,0,0" Source="Assets/500x100_trans.png" >
@@ -45,46 +44,50 @@
 			<!--Panorama item one-->
             <phone:PanoramaItem Header="home">
 				<StackPanel Orientation="Vertical">
-                	<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="AshTag is a free tool to help you do your bit to track the spread of the Ash ‘die back’ fungus and limit its impact." TextAlignment="Center" FontSize="26.667"/>
+                	<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="AshTag is a free tool to help you do your bit to track the spread of the Ash ‘die back’ fungus and limit its impact." FontSize="26.667"/>
                 	<TextBlock TextWrapping="Wrap" Text="Email address" Margin="0,40,0,0" FontSize="33.333"/>
-                	<TextBox Height="72" TextWrapping="Wrap" InputScope="EmailUserName" AcceptsReturn="True"/>
+                	<TextBox TextWrapping="Wrap" InputScope="EmailUserName" AcceptsReturn="True"/>
+                	<StackPanel Margin="0,69,0,0" Height="135">
+                		<Image Height="100" Source="Assets/iasicon.png"/>
+                		<TextBlock TextWrapping="Wrap" Text="Powered by" TextAlignment="Center" Height="35"/>
+                	</StackPanel>
 				</StackPanel>
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
             <phone:PanoramaItem Header="id guide">
-                <StackPanel>
-                	<ListBox>
-                		<StackPanel Orientation="Horizontal" Tap="StackPanel_Tap_1">
-                			<i:Interaction.Triggers>
-                				<i:EventTrigger EventName="MouseLeftButtonDown">
-                					<ec:NavigateToPageAction TargetPage="/GuidePage.xaml" />
-                				</i:EventTrigger>
-                			</i:Interaction.Triggers>
-                			<Image Source="/Assets/Guide/step1_small.jpg" Width="100" Height="100"/>
-                			<TextBlock Text="Step one: Make sure it is an Ash tree" Margin="10,0" HorizontalAlignment="Center" VerticalAlignment="Center" TextAlignment="Center" />
-                		</StackPanel>
-                		<StackPanel Orientation="Horizontal">
-                			<Image Source="/Assets/Guide/step2_small.jpg" Width="100" Height="100"/>
-                			<TextBlock Text="Step two: Make sure it is an Ash tree" />
-                		</StackPanel>
-                		<StackPanel Orientation="Horizontal">
-                			<Image Source="/Assets/Guide/step3_small.jpg" Width="100" Height="100"/>
-                			<TextBlock Text="Step three: Make sure it is an Ash tree" />
-                		</StackPanel>
-                		<StackPanel Orientation="Horizontal">
-                			<Image Source="/Assets/Guide/step4_small.jpg" Width="100" Height="100"/>
-                			<TextBlock Text="Step four: Make sure it is an Ash tree" />
-                		</StackPanel>
-                		<StackPanel Orientation="Horizontal">
-                			<Image Source="/Assets/Guide/step5_small.jpg" Width="100" Height="100"/>
-                			<TextBlock Text="Step five: Make sure it is an Ash tree" />
-                		</StackPanel>
-                	</ListBox>
-                </StackPanel>
+                <ListBox>
+                	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                		<i:Interaction.Triggers>
+                			<i:EventTrigger EventName="MouseLeftButtonDown">
+                				<ec:NavigateToPageAction TargetPage="/GuidePage.xaml" />
+                			</i:EventTrigger>
+                		</i:Interaction.Triggers>
+                		<Image Source="/Assets/Guide/step1_small.jpg" Width="150" Height="150"/>
+                		<TextBlock Text="Step one: Make sure it is an Ash tree" TextWrapping="Wrap" TextTrimming="WordEllipsis" FontSize="30" Margin="10,0,0,0" Width="260" />
+                	</StackPanel>
+                	<StackPanel x:Name="stackPanel" Orientation="Horizontal" Margin="0,0,0,10" Height="150">
+                		<Image Source="/Assets/Guide/step2_small.jpg" Width="150" Height="150"/>
+                		<TextBlock Text="Step two: Make sure it is an Ash tree and also this has some really long text" TextTrimming="WordEllipsis" Width="260" Margin="10,0,0,0" FontSize="30" TextWrapping="Wrap" />
+                	</StackPanel>
+                	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                		<Image Source="/Assets/Guide/step3_small.jpg" Width="150" Height="150"/>
+                		<TextBlock Text="Step three: Make sure it is an Ash tree" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                	</StackPanel>
+                	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                		<Image Source="/Assets/Guide/step4_small.jpg" Width="150" Height="150"/>
+                		<TextBlock Text="Step four: Make sure it is an Ash tree" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                	</StackPanel>
+                	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                		<Image Source="/Assets/Guide/step5_small.jpg" Width="150" Height="150"/>
+                		<TextBlock Text="Step five: Make sure it is an Ash tree" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                	</StackPanel>
+                </ListBox>
             </phone:PanoramaItem>
             <phone:PanoramaItem Header="about">
-            	<Grid/>
+            	<ScrollViewer>
+            		<TextBlock TextWrapping="Wrap" Text="AshTag is a rapidly-built app aimed at helping to identify and report incidences of the Ash dieback fungus, or Chalara fraxinea. The project is being led by the University of East Anglia's Adapt Group, and has the support of most key forestry and wildlife agencies. Latest info at www.ashtag.org.  Please use the identification gallery images to spot telltale signs of the fungus. If you believe you have a suspicious sighting, use the app to take a close up photo of the symptom which most matches the identification guide. The app will then use your phone's GPS to locate the sighting, and file a report to AshTag.org. You may file up to three reports for the same tree (one photo per report).  You can also file manual reports and upload photos from your digital camera at AshTag.org.  Privacy Your contact details are requested if you are filing a report. This is so that you can be contacted for further clarifications if experts verify your report. This data will be held in accordance with data protection legislation.  Troubleshooting The app has been created in a matter of days, so you may find some rough edges. Some of these can be solved by closing any other apps running in the background of your phone, to free up more memory. Please report any bugs to problems@ashtag.org with a detailed account of what happened.  The app and submissions framework is powered by the Invasive Alien Species website www.ias-ess.org, and has only been possible thanks to heroic efforts by volunteer programmers from that organisation.  This app will ask for your email address, which will be stored with any sightings you make (otherwise it is not collected).  Your email address will not be used for any other purpose than contacting you if our experts would like to follow up on your sighting, or our technical team would like to follow up on any problems you encounter.  Copyright notices:  SBJSON: https://github.com/stig/json-framework/  AFNetworking: https://github.com/AFNetworking/AFNetworking/  MBProgressHUD: https://github.com/jdg/MBProgressHUD is Copyright (c) 2009-2012 Matej Bukovinski:  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."/>
+            	</ScrollViewer>
             </phone:PanoramaItem>
         </phone:Panorama>
     </Grid>

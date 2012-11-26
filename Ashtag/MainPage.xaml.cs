@@ -17,9 +17,10 @@ namespace Ashtag
             InitializeComponent();
         }
 
-        private void StackPanel_Tap_1(object sender, System.Windows.Input.GestureEventArgs e)
+        private void ApplicationBarIconButton_Click_1(object sender, System.EventArgs e)
         {
-        	// TODO: Add event handler implementation here.
+            PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
+        	root.Navigate(new Uri("/SelectImage.xaml", UriKind.Relative));			
         }
     }
 }

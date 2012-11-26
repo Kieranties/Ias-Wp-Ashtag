@@ -10,9 +10,9 @@ using Microsoft.Phone.Shell;
 
 namespace Ashtag
 {
-    public partial class GuidPage : PhoneApplicationPage
+    public partial class SelectImage : PhoneApplicationPage
     {
-        public GuidPage()
+        public SelectImage()
         {
             InitializeComponent();
         }
@@ -20,7 +20,7 @@ namespace Ashtag
         private void ApplicationBarIconButton_Click_1(object sender, System.EventArgs e)
         {
             PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
-            root.Navigate(new Uri("/SelectImage.xaml", UriKind.Relative));
+        	root.Navigate(new Uri("/SetLocation.xaml", UriKind.Relative));
         }
     }
 }
