@@ -23,7 +23,7 @@
 
  	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar IsMenuEnabled="False">
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting" d:IsHidden="True" Click="ApplicationBarIconButton_Click_1"/>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting" d:IsHidden="True" Click="SubmitSightingButton_Click"/>
 			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="contact" d:IsHidden="True"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
@@ -46,7 +46,7 @@
 				<StackPanel Orientation="Vertical">
                     <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.MainPageIntroduction, Source={StaticResource LocalizedStrings}}" FontSize="26.667"/>
                     <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.MainPageEmailAddressLabel, Source={StaticResource LocalizedStrings}}" Margin="0,40,0,0" FontSize="33.333"/>
-                	<TextBox TextWrapping="Wrap" InputScope="EmailUserName" AcceptsReturn="True"/>
+                	<TextBox TextWrapping="Wrap" x:Name="EmailAddress" InputScope="EmailUserName" AcceptsReturn="True"/>
                 	<StackPanel Margin="0,69,0,0" Height="135">
                 		<Image Height="100" Source="Assets/iasicon.png"/>
                 		<TextBlock TextWrapping="Wrap" Text="Powered by" TextAlignment="Center" Height="35"/>
