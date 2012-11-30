@@ -59,26 +59,46 @@
                 <ListBox>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 		<i:Interaction.Triggers>
-                			<i:EventTrigger EventName="MouseLeftButtonDown">
-                				<ec:NavigateToPageAction TargetPage="/GuidePage.xaml" />
+                			<i:EventTrigger EventName="Tap">
+                				<ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=1" />
                 			</i:EventTrigger>
                 		</i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step1_small.jpg" Width="150" Height="150"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep1, Source={StaticResource LocalizedStrings}}" TextWrapping="Wrap" TextTrimming="WordEllipsis" FontSize="30" Margin="10,0,0,0" Width="260" />
                 	</StackPanel>
                 	<StackPanel x:Name="stackPanel" Orientation="Horizontal" Margin="0,0,0,10" Height="150">
-                		<Image Source="/Assets/Guide/step2_small.jpg" Width="150" Height="150"/>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Tap">
+                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=2" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Image Source="/Assets/Guide/step2_small.jpg" Width="150" Height="150"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep2, Source={StaticResource LocalizedStrings}}" TextTrimming="WordEllipsis" Width="260" Margin="10,0,0,0" FontSize="30" TextWrapping="Wrap" />
                 	</StackPanel>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Tap">
+                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=3" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step3_small.jpg" Width="150" Height="150"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep3, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
                 	</StackPanel>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Tap">
+                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=4" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step4_small.jpg" Width="150" Height="150"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep4, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
                 	</StackPanel>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Tap">
+                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=5" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step5_small.jpg" Width="150" Height="150"/>
                         <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep5, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
                 	</StackPanel>

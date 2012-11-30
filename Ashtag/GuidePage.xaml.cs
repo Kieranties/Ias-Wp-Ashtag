@@ -17,7 +17,23 @@ namespace Ashtag
             InitializeComponent();
         }
 
-        private void ApplicationBarIconButton_Click_1(object sender, System.EventArgs e)
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            string selectedGuideStep;
+            int guideStep = 1;
+
+            if (NavigationContext.QueryString.TryGetValue("step", out selectedGuideStep))
+            {
+                guideStep = Convert.ToInt32(selectedGuideStep);
+            } // End If
+
+            guideStep -= 1;
+            GuidePivot.SelectedIndex = guideStep;
+
+            base.OnNavigatedTo(e);
+        }
+
+        private void SubmitSightingButton_Click(object sender, System.EventArgs e)
         {
             PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
             root.Navigate(new Uri("/SelectImage.xaml", UriKind.Relative));
