@@ -27,11 +27,9 @@
             <phone:PivotItem Header="step one" Margin="12,29,12,-1">
                 <ScrollViewer HorizontalAlignment="Left" Height="531" VerticalAlignment="Top" Width="456">
             		<StackPanel>
-                		
-                			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Check that it is an Ash tree" VerticalAlignment="Top" FontSize="32"/>
-                			<Image Source="/Assets/Guide/step1_large.jpg" Height="400" Margin="0,20"/>
-                			<TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This should be the blurb about the item" VerticalAlignment="Top"/>
-                		
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="Check that it is an Ash tree" VerticalAlignment="Top" FontSize="32"/>
+                        <Image Source="/Assets/Guide/step1_large.jpg" Height="400" Margin="0,20"/>
+                        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="This should be the blurb about the item" VerticalAlignment="Top"/>
                 	</StackPanel>
             	</ScrollViewer>
             </phone:PivotItem>
@@ -50,6 +48,5 @@
             	<Grid/>
             </phone:PivotItem>
         </phone:Pivot>
-    </Grid>
-    
+    </Grid>    
 </phone:PhoneApplicationPage>
