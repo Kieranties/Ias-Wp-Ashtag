@@ -179,4 +179,13 @@
   <data name="SetLocationPageTitle" xml:space="preserve">
     <value>set location</value>
   </data>
+  <data name="BaseUri_AppSetting" xml:space="preserve">
+    <value>http://ias-ess.org/api</value>
+  </data>
+  <data name="MainPage_EmptyEmailAddressMessageBoxCaption" xml:space="preserve">
+    <value>No email address</value>
+  </data>
+  <data name="MainPage_EmptyEmailAddressMessageBoxText" xml:space="preserve">
+    <value>Please enter an email address to submit a sighting</value>
+  </data>
 </root>
