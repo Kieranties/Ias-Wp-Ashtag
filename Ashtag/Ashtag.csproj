@@ -94,7 +94,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GuidePage.xaml.cs">
+    <Compile Include="View\GuidePage.xaml.cs">
       <DependentUpon>GuidePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\InputValidationHelper.cs" />
@@ -113,10 +113,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppSettings.resx</DependentUpon>
     </Compile>
-    <Compile Include="SelectImage.xaml.cs">
+    <Compile Include="View\SelectImage.xaml.cs">
       <DependentUpon>SelectImage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="SetLocation.xaml.cs">
+    <Compile Include="View\SetLocation.xaml.cs">
       <DependentUpon>SetLocation.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -182,7 +182,7 @@
     <Resource Include="Assets\iasicon.png" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="GuidePage.xaml">
+    <Page Include="View\GuidePage.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -190,11 +190,11 @@
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SelectImage.xaml">
+    <Page Include="View\SelectImage.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="SetLocation.xaml">
+    <Page Include="View\SetLocation.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
       <SubType>Designer</SubType>
     </Page>

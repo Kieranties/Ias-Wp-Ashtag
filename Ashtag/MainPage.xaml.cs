@@ -69,7 +69,7 @@ namespace Ashtag
                     IsolatedStorageSettings.ApplicationSettings.Save();
 
                     PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
-                    root.Navigate(new Uri("/SelectImage.xaml", UriKind.Relative));
+                    root.Navigate(new Uri("/View/SelectImage.xaml", UriKind.Relative));
                 } // End Else
             } // End If
             else

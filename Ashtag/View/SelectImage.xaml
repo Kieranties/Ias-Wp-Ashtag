@@ -22,7 +22,7 @@
 
 	<i:Interaction.Triggers>
 		<i:EventTrigger EventName="MouseLeftButtonDown">
-			<ec:NavigateToPageAction TargetPage="/SetLocation.xaml"/>
+			<ec:NavigateToPageAction TargetPage="/View/SetLocation.xaml"/>
 		</i:EventTrigger>
 	</i:Interaction.Triggers>
 	<Grid x:Name="LayoutRoot" Background="Transparent">

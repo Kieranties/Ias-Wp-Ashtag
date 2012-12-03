@@ -53,7 +53,7 @@
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 		<i:Interaction.Triggers>
                 			<i:EventTrigger EventName="Tap">
-                				<ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=1" />
+                				<ec:NavigateToPageAction TargetPage="/View/GuidePage.xaml?step=1" />
                 			</i:EventTrigger>
                 		</i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step1_small.jpg" Width="150" Height="150"/>
@@ -62,7 +62,7 @@
                 	<StackPanel x:Name="stackPanel" Orientation="Horizontal" Margin="0,0,0,10" Height="150">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Tap">
-                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=2" />
+                                <ec:NavigateToPageAction TargetPage="/View/GuidePage.xaml?step=2" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                         <Image Source="/Assets/Guide/step2_small.jpg" Width="150" Height="150"/>
@@ -71,7 +71,7 @@
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Tap">
-                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=3" />
+                                <ec:NavigateToPageAction TargetPage="/View/GuidePage.xaml?step=3" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step3_small.jpg" Width="150" Height="150"/>
@@ -80,7 +80,7 @@
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Tap">
-                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=4" />
+                                <ec:NavigateToPageAction TargetPage="/View/GuidePage.xaml?step=4" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step4_small.jpg" Width="150" Height="150"/>
@@ -89,7 +89,7 @@
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Tap">
-                                <ec:NavigateToPageAction TargetPage="/GuidePage.xaml?step=5" />
+                                <ec:NavigateToPageAction TargetPage="/View/GuidePage.xaml?step=5" />
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step5_small.jpg" Width="150" Height="150"/>
