@@ -212,4 +212,7 @@
   <data name="MainPage_InvalidEmailAddressMessageBoxText" xml:space="preserve">
     <value>Please enter a valid email address e.g. email@example.com</value>
   </data>
+  <data name="SelectImagPage_ChoosePictureButtonText" xml:space="preserve">
+    <value>choose picture</value>
+  </data>
 </root>

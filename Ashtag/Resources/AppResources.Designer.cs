@@ -322,6 +322,15 @@ namespace Ashtag.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to choose picture.
+        /// </summary>
+        public static string SelectImagPage_ChoosePictureButtonText {
+            get {
+                return ResourceManager.GetString("SelectImagPage_ChoosePictureButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to set location.
         /// </summary>
         public static string SetLocationPage_Title {

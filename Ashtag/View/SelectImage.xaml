@@ -25,6 +25,7 @@
 			<ec:NavigateToPageAction TargetPage="/View/SetLocation.xaml"/>
 		</i:EventTrigger>
 	</i:Interaction.Triggers>
+    
 	<Grid x:Name="LayoutRoot" Background="Transparent">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
@@ -49,13 +50,10 @@
 				<ColumnDefinition Width="Auto"/>
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
-			<Image Source="/Assets/Guide/step1_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="0" Grid.Column="0"/>
-			<Image Source="/Assets/Guide/step2_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="0" Grid.Column="1"/>
-			<Image Source="/Assets/Guide/step3_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="0" Grid.Column="2"/>
-			<Image Source="/Assets/Guide/step4_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="1" Grid.Column="0"/>
-			<Image Source="/Assets/Guide/step5_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="1" Grid.Column="1"/>			
+            <Image x:Name="SelectedImage" Margin="5" Width="0" Height="120" Grid.Row="0" Grid.Column="0"/>
 		</Grid>
-        <Button Content="{Binding Path=LocalizedResources.SelectImagePage_TakePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,203,0,0" Width="480"/>
+        <Button Content="{Binding Path=LocalizedResources.SelectImagPage_ChoosePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,22,0,0" Width="480" Click="ChoosePicture_Click" />
+        <Button Content="{Binding Path=LocalizedResources.SelectImagePage_TakePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,99,0,0" Width="480" RenderTransformOrigin="0.504,-0.514"/>
 	</Grid>
 
 </phone:PhoneApplicationPage>
