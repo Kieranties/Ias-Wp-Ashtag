@@ -97,6 +97,7 @@
     <Compile Include="GuidePage.xaml.cs">
       <DependentUpon>GuidePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\InputValidationHelper.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

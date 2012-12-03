@@ -268,6 +268,24 @@ namespace Ashtag.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Invalid email address.
+        /// </summary>
+        public static string MainPage_InvalidEmailAddressMessageBoxCaption {
+            get {
+                return ResourceManager.GetString("MainPage_InvalidEmailAddressMessageBoxCaption", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please enter a valid email address e.g. email@example.com.
+        /// </summary>
+        public static string MainPage_InvalidEmailAddressMessageBoxText {
+            get {
+                return ResourceManager.GetString("MainPage_InvalidEmailAddressMessageBoxText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {

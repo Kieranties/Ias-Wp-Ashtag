@@ -21,13 +21,6 @@
 		</DataTemplate>
 	</phone:PhoneApplicationPage.Resources>
 
- 	<phone:PhoneApplicationPage.ApplicationBar>
-		<shell:ApplicationBar IsMenuEnabled="False">
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.camera.png" Text="submit sighting" d:IsHidden="True" Click="SubmitSightingButton_Click"/>
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/feature.email.png" Text="contact" d:IsHidden="True"/>
-		</shell:ApplicationBar>
-	</phone:PhoneApplicationPage.ApplicationBar>
-
     <!--LayoutRoot contains the root grid where all other page content is placed-->
     <Grid x:Name="LayoutRoot">
         <phone:Panorama Margin="0,0,0,-3" VerticalAlignment="Bottom" HorizontalAlignment="Right">
