@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
+﻿using Microsoft.Phone.Controls;
+using System;
 using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
 
 namespace Ashtag
 {
@@ -31,12 +25,6 @@ namespace Ashtag
             GuidePivot.SelectedIndex = guideStep;
 
             base.OnNavigatedTo(e);
-        }
-
-        private void SubmitSightingButton_Click(object sender, System.EventArgs e)
-        {
-            PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
-            root.Navigate(new Uri("/SelectImage.xaml", UriKind.Relative));
         }
     }
 }
