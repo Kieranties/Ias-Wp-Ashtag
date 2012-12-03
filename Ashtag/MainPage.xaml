@@ -42,10 +42,10 @@
 			</phone:Panorama.TitleTemplate>
             
 			<!--Panorama item one-->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.MainPageHeader, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.MainPage_Header, Source={StaticResource LocalizedStrings}}">
 				<StackPanel Orientation="Vertical">
-                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.MainPageIntroduction, Source={StaticResource LocalizedStrings}}" FontSize="26.667"/>
-                    <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.MainPageEmailAddressLabel, Source={StaticResource LocalizedStrings}}" Margin="0,40,0,0" FontSize="33.333"/>
+                    <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.MainPage_Introduction, Source={StaticResource LocalizedStrings}}" FontSize="26.667"/>
+                    <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.MainPage_EmailAddressLabel, Source={StaticResource LocalizedStrings}}" Margin="0,40,0,0" FontSize="33.333"/>
                 	<TextBox TextWrapping="Wrap" x:Name="EmailAddress" InputScope="EmailUserName" AcceptsReturn="True"/>
                 	<StackPanel Margin="0,69,0,0" Height="135">
                 		<Image Height="100" Source="Assets/iasicon.png"/>
@@ -55,7 +55,7 @@
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.IdGuidePageHeader, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.IdGuidePage_Header, Source={StaticResource LocalizedStrings}}">
                 <ListBox>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                 		<i:Interaction.Triggers>
@@ -64,7 +64,7 @@
                 			</i:EventTrigger>
                 		</i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step1_small.jpg" Width="150" Height="150"/>
-                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep1, Source={StaticResource LocalizedStrings}}" TextWrapping="Wrap" TextTrimming="WordEllipsis" FontSize="30" Margin="10,0,0,0" Width="260" />
+                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePage_Step1Title, Source={StaticResource LocalizedStrings}}" TextWrapping="Wrap" TextTrimming="WordEllipsis" FontSize="30" Margin="10,0,0,0" Width="260" />
                 	</StackPanel>
                 	<StackPanel x:Name="stackPanel" Orientation="Horizontal" Margin="0,0,0,10" Height="150">
                         <i:Interaction.Triggers>
@@ -73,7 +73,7 @@
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                         <Image Source="/Assets/Guide/step2_small.jpg" Width="150" Height="150"/>
-                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep2, Source={StaticResource LocalizedStrings}}" TextTrimming="WordEllipsis" Width="260" Margin="10,0,0,0" FontSize="30" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePage_Step2Title, Source={StaticResource LocalizedStrings}}" TextTrimming="WordEllipsis" Width="260" Margin="10,0,0,0" FontSize="30" TextWrapping="Wrap" />
                 	</StackPanel>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <i:Interaction.Triggers>
@@ -82,7 +82,7 @@
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step3_small.jpg" Width="150" Height="150"/>
-                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep3, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePage_Step3Title, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
                 	</StackPanel>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <i:Interaction.Triggers>
@@ -91,7 +91,7 @@
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step4_small.jpg" Width="150" Height="150"/>
-                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep4, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePage_Step4Title, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
                 	</StackPanel>
                 	<StackPanel Orientation="Horizontal" Margin="0,0,0,10">
                         <i:Interaction.Triggers>
@@ -100,15 +100,15 @@
                             </i:EventTrigger>
                         </i:Interaction.Triggers>
                 		<Image Source="/Assets/Guide/step5_small.jpg" Width="150" Height="150"/>
-                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePageStep5, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
+                        <TextBlock Text="{Binding Path=LocalizedResources.IdGuidePage_Step5Title, Source={StaticResource LocalizedStrings}}" FontSize="30" Margin="10,0,0,0" Width="260" TextTrimming="WordEllipsis" TextWrapping="Wrap" />
                 	</StackPanel>
                 </ListBox>
             </phone:PanoramaItem>
 
             <!--Panorama item three-->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.AboutPageHeader, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.AboutPage_Header, Source={StaticResource LocalizedStrings}}">
             	<ScrollViewer>
-                    <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.AboutPageContent, Source={StaticResource LocalizedStrings}}"/>
+                    <TextBlock TextWrapping="Wrap" Text="{Binding Path=LocalizedResources.AboutPage_Content, Source={StaticResource LocalizedStrings}}"/>
             	</ScrollViewer>
             </phone:PanoramaItem>
         </phone:Panorama>

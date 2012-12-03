@@ -125,67 +125,85 @@
     <value>en-US</value>
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
-  <data name="ApplicationTitle" xml:space="preserve">
+  <data name="Application_Title" xml:space="preserve">
     <value>ASHTAG</value>
   </data>
-  <data name="AppBarButtonText" xml:space="preserve">
+  <data name="AppBar_ButtonText" xml:space="preserve">
     <value>add</value>
   </data>
-  <data name="AppBarMenuItemText" xml:space="preserve">
+  <data name="AppBar_MenuItemText" xml:space="preserve">
     <value>Menu Item</value>
   </data>
-  <data name="AboutPageContent" xml:space="preserve">
+  <data name="AboutPage_Content" xml:space="preserve">
     <value>AshTag is a rapidly-built app aimed at helping to identify and report incidences of the Ash dieback fungus, or Chalara fraxinea. The project is being led by the University of East Anglia's Adapt Group, and has the support of most key forestry and wildlife agencies. Latest info at www.ashtag.org.  Please use the identification gallery images to spot telltale signs of the fungus. If you believe you have a suspicious sighting, use the app to take a close up photo of the symptom which most matches the identification guide. The app will then use your phone's GPS to locate the sighting, and file a report to AshTag.org. You may file up to three reports for the same tree (one photo per report).  You can also file manual reports and upload photos from your digital camera at AshTag.org.  Privacy Your contact details are requested if you are filing a report. This is so that you can be contacted for further clarifications if experts verify your report. This data will be held in accordance with data protection legislation.  Troubleshooting The app has been created in a matter of days, so you may find some rough edges. Some of these can be solved by closing any other apps running in the background of your phone, to free up more memory. Please report any bugs to problems@ashtag.org with a detailed account of what happened.  The app and submissions framework is powered by the Invasive Alien Species website www.ias-ess.org, and has only been possible thanks to heroic efforts by volunteer programmers from that organisation.  This app will ask for your email address, which will be stored with any sightings you make (otherwise it is not collected).  Your email address will not be used for any other purpose than contacting you if our experts would like to follow up on your sighting, or our technical team would like to follow up on any problems you encounter.  Copyright notices:  SBJSON: https://github.com/stig/json-framework/  AFNetworking: https://github.com/AFNetworking/AFNetworking/  MBProgressHUD: https://github.com/jdg/MBProgressHUD is Copyright (c) 2009-2012 Matej Bukovinski:  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</value>
   </data>
-  <data name="AboutPageHeader" xml:space="preserve">
+  <data name="AboutPage_Header" xml:space="preserve">
     <value>about</value>
   </data>
-  <data name="IdGuidePageHeader" xml:space="preserve">
+  <data name="IdGuidePage_Header" xml:space="preserve">
     <value>id guide</value>
   </data>
-  <data name="IdGuidePageStep1" xml:space="preserve">
+  <data name="IdGuidePage_Step1Title" xml:space="preserve">
     <value>Step one: Make sure it is an Ash tree</value>
   </data>
-  <data name="IdGuidePageStep2" xml:space="preserve">
+  <data name="IdGuidePage_Step2Title" xml:space="preserve">
     <value>Step two: Make sure it is an Ash tree and also this has some really long text</value>
   </data>
-  <data name="IdGuidePageStep3" xml:space="preserve">
+  <data name="IdGuidePage_Step3Title" xml:space="preserve">
     <value>Step three: Make sure it is an Ash tree</value>
   </data>
-  <data name="IdGuidePageStep4" xml:space="preserve">
+  <data name="IdGuidePage_Step4Title" xml:space="preserve">
     <value>Step four: Make sure it is an Ash tree</value>
   </data>
-  <data name="IdGuidePageStep5" xml:space="preserve">
+  <data name="IdGuidePage_Step5Title" xml:space="preserve">
     <value>Step five: Make sure it is an Ash tree</value>
   </data>
-  <data name="MainPageEmailAddressLabel" xml:space="preserve">
+  <data name="MainPage_EmailAddressLabel" xml:space="preserve">
     <value>Email address</value>
     <comment>Email address input box label text</comment>
   </data>
-  <data name="MainPageHeader" xml:space="preserve">
+  <data name="MainPage_Header" xml:space="preserve">
     <value>home</value>
     <comment>The application home page title</comment>
   </data>
-  <data name="MainPageIntroduction" xml:space="preserve">
+  <data name="MainPage_Introduction" xml:space="preserve">
     <value>AshTag is a free tool to help you do your bit to track the spread of the Ash ‘die back’ fungus and limit its impact.</value>
     <comment>The application home page introduction text</comment>
   </data>
-  <data name="SelectImagePageTakePictureButton" xml:space="preserve">
+  <data name="SelectImagePage_TakePictureButtonText" xml:space="preserve">
     <value>take picture</value>
   </data>
-  <data name="SelectImagePageTitle" xml:space="preserve">
+  <data name="SelectImagePage_Title" xml:space="preserve">
     <value>select image</value>
   </data>
-  <data name="SetLocationPageTitle" xml:space="preserve">
+  <data name="SetLocationPage_Title" xml:space="preserve">
     <value>set location</value>
-  </data>
-  <data name="BaseUri_AppSetting" xml:space="preserve">
-    <value>http://ias-ess.org/api</value>
   </data>
   <data name="MainPage_EmptyEmailAddressMessageBoxCaption" xml:space="preserve">
     <value>No email address</value>
   </data>
   <data name="MainPage_EmptyEmailAddressMessageBoxText" xml:space="preserve">
     <value>Please enter an email address to submit a sighting</value>
+  </data>
+  <data name="AppBar_ContactButtonText" xml:space="preserve">
+    <value>contact</value>
+  </data>
+  <data name="IdGuidePage_Step1Content" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IdGuidePage_Step2Content" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IdGuidePage_Step3Content" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IdGuidePage_Step4Content" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IdGuidePage_Step5Content" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AppBar_SubmitSightingButtonText" xml:space="preserve">
+    <value>submit sighting</value>
   </data>
 </root>

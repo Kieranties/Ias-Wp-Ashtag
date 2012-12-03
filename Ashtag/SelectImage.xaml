@@ -34,8 +34,8 @@
 
 		<!--TitlePanel contains the name of the application and page title-->
 		<StackPanel Grid.Row="0" Margin="12,17,0,28">
-			<TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="{Binding Path=LocalizedResources.SelectImagePageTitle, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+			<TextBlock Text="{Binding Path=LocalizedResources.Application_Title, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.SelectImagePage_Title, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
 		</StackPanel>
 
 		<!--ContentPanel - place additional content here-->
@@ -55,7 +55,7 @@
 			<Image Source="/Assets/Guide/step4_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="1" Grid.Column="0"/>
 			<Image Source="/Assets/Guide/step5_small.jpg" Margin="5" Width="120" Height="120" Grid.Row="1" Grid.Column="1"/>			
 		</Grid>
-        <Button Content="{Binding Path=LocalizedResources.SelectImagePageTakePictureButton, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,203,0,0" Width="480"/>
+        <Button Content="{Binding Path=LocalizedResources.SelectImagePage_TakePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,203,0,0" Width="480"/>
 	</Grid>
 
 </phone:PhoneApplicationPage>

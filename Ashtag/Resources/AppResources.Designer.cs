@@ -63,108 +63,171 @@ namespace Ashtag.Resources {
         /// <summary>
         ///   Looks up a localized string similar to AshTag is a rapidly-built app aimed at helping to identify and report incidences of the Ash dieback fungus, or Chalara fraxinea. The project is being led by the University of East Anglia&apos;s Adapt Group, and has the support of most key forestry and wildlife agencies. Latest info at www.ashtag.org.  Please use the identification gallery images to spot telltale signs of the fungus. If you believe you have a suspicious sighting, use the app to take a close up photo of the symptom which most matches the identific [rest of string was truncated]&quot;;.
         /// </summary>
-        public static string AboutPageContent {
+        public static string AboutPage_Content {
             get {
-                return ResourceManager.GetString("AboutPageContent", resourceCulture);
+                return ResourceManager.GetString("AboutPage_Content", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to about.
         /// </summary>
-        public static string AboutPageHeader {
+        public static string AboutPage_Header {
             get {
-                return ResourceManager.GetString("AboutPageHeader", resourceCulture);
+                return ResourceManager.GetString("AboutPage_Header", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to add.
         /// </summary>
-        public static string AppBarButtonText {
+        public static string AppBar_ButtonText {
             get {
-                return ResourceManager.GetString("AppBarButtonText", resourceCulture);
+                return ResourceManager.GetString("AppBar_ButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to contact.
+        /// </summary>
+        public static string AppBar_ContactButtonText {
+            get {
+                return ResourceManager.GetString("AppBar_ContactButtonText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Menu Item.
         /// </summary>
-        public static string AppBarMenuItemText {
+        public static string AppBar_MenuItemText {
             get {
-                return ResourceManager.GetString("AppBarMenuItemText", resourceCulture);
+                return ResourceManager.GetString("AppBar_MenuItemText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to submit sighting.
+        /// </summary>
+        public static string AppBar_SubmitSightingButtonText {
+            get {
+                return ResourceManager.GetString("AppBar_SubmitSightingButtonText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to ASHTAG.
         /// </summary>
-        public static string ApplicationTitle {
+        public static string Application_Title {
             get {
-                return ResourceManager.GetString("ApplicationTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to http://ias-ess.org/api.
-        /// </summary>
-        public static string BaseUri_AppSetting {
-            get {
-                return ResourceManager.GetString("BaseUri_AppSetting", resourceCulture);
+                return ResourceManager.GetString("Application_Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to id guide.
         /// </summary>
-        public static string IdGuidePageHeader {
+        public static string IdGuidePage_Header {
             get {
-                return ResourceManager.GetString("IdGuidePageHeader", resourceCulture);
+                return ResourceManager.GetString("IdGuidePage_Header", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string IdGuidePage_Step1Content {
+            get {
+                return ResourceManager.GetString("IdGuidePage_Step1Content", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Step one: Make sure it is an Ash tree.
         /// </summary>
-        public static string IdGuidePageStep1 {
+        public static string IdGuidePage_Step1Title {
             get {
-                return ResourceManager.GetString("IdGuidePageStep1", resourceCulture);
+                return ResourceManager.GetString("IdGuidePage_Step1Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string IdGuidePage_Step2Content {
+            get {
+                return ResourceManager.GetString("IdGuidePage_Step2Content", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Step two: Make sure it is an Ash tree and also this has some really long text.
         /// </summary>
-        public static string IdGuidePageStep2 {
+        public static string IdGuidePage_Step2Title {
             get {
-                return ResourceManager.GetString("IdGuidePageStep2", resourceCulture);
+                return ResourceManager.GetString("IdGuidePage_Step2Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string IdGuidePage_Step3Content {
+            get {
+                return ResourceManager.GetString("IdGuidePage_Step3Content", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Step three: Make sure it is an Ash tree.
         /// </summary>
-        public static string IdGuidePageStep3 {
+        public static string IdGuidePage_Step3Title {
             get {
-                return ResourceManager.GetString("IdGuidePageStep3", resourceCulture);
+                return ResourceManager.GetString("IdGuidePage_Step3Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string IdGuidePage_Step4Content {
+            get {
+                return ResourceManager.GetString("IdGuidePage_Step4Content", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Step four: Make sure it is an Ash tree.
         /// </summary>
-        public static string IdGuidePageStep4 {
+        public static string IdGuidePage_Step4Title {
             get {
-                return ResourceManager.GetString("IdGuidePageStep4", resourceCulture);
+                return ResourceManager.GetString("IdGuidePage_Step4Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string IdGuidePage_Step5Content {
+            get {
+                return ResourceManager.GetString("IdGuidePage_Step5Content", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Step five: Make sure it is an Ash tree.
         /// </summary>
-        public static string IdGuidePageStep5 {
+        public static string IdGuidePage_Step5Title {
             get {
-                return ResourceManager.GetString("IdGuidePageStep5", resourceCulture);
+                return ResourceManager.GetString("IdGuidePage_Step5Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email address.
+        /// </summary>
+        public static string MainPage_EmailAddressLabel {
+            get {
+                return ResourceManager.GetString("MainPage_EmailAddressLabel", resourceCulture);
             }
         }
         
@@ -187,29 +250,20 @@ namespace Ashtag.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email address.
-        /// </summary>
-        public static string MainPageEmailAddressLabel {
-            get {
-                return ResourceManager.GetString("MainPageEmailAddressLabel", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to home.
         /// </summary>
-        public static string MainPageHeader {
+        public static string MainPage_Header {
             get {
-                return ResourceManager.GetString("MainPageHeader", resourceCulture);
+                return ResourceManager.GetString("MainPage_Header", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to AshTag is a free tool to help you do your bit to track the spread of the Ash ‘die back’ fungus and limit its impact..
         /// </summary>
-        public static string MainPageIntroduction {
+        public static string MainPage_Introduction {
             get {
-                return ResourceManager.GetString("MainPageIntroduction", resourceCulture);
+                return ResourceManager.GetString("MainPage_Introduction", resourceCulture);
             }
         }
         
@@ -234,27 +288,27 @@ namespace Ashtag.Resources {
         /// <summary>
         ///   Looks up a localized string similar to take picture.
         /// </summary>
-        public static string SelectImagePageTakePictureButton {
+        public static string SelectImagePage_TakePictureButtonText {
             get {
-                return ResourceManager.GetString("SelectImagePageTakePictureButton", resourceCulture);
+                return ResourceManager.GetString("SelectImagePage_TakePictureButtonText", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to select image.
         /// </summary>
-        public static string SelectImagePageTitle {
+        public static string SelectImagePage_Title {
             get {
-                return ResourceManager.GetString("SelectImagePageTitle", resourceCulture);
+                return ResourceManager.GetString("SelectImagePage_Title", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to set location.
         /// </summary>
-        public static string SetLocationPageTitle {
+        public static string SetLocationPage_Title {
             get {
-                return ResourceManager.GetString("SetLocationPageTitle", resourceCulture);
+                return ResourceManager.GetString("SetLocationPage_Title", resourceCulture);
             }
         }
     }
