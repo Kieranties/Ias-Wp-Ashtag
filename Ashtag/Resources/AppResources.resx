@@ -215,4 +215,7 @@
   <data name="SelectImagPage_ChoosePictureButtonText" xml:space="preserve">
     <value>choose picture</value>
   </data>
+  <data name="SetLocationPage_GetLocationButtonText" xml:space="preserve">
+    <value>get location</value>
+  </data>
 </root>

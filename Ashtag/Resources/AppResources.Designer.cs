@@ -331,6 +331,15 @@ namespace Ashtag.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to get location.
+        /// </summary>
+        public static string SetLocationPage_GetLocationButtonText {
+            get {
+                return ResourceManager.GetString("SetLocationPage_GetLocationButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to set location.
         /// </summary>
         public static string SetLocationPage_Title {
