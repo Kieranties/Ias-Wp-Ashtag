@@ -15,6 +15,7 @@ namespace Ashtag
     public partial class SelectImage : PhoneApplicationPage
     {
         private PhotoChooserTask _photoChooserTask;
+        private CameraCaptureTask _cameraCaptureTask;
 
         public SelectImage()
         {
@@ -22,11 +23,19 @@ namespace Ashtag
 
             this._photoChooserTask = new PhotoChooserTask();
             this._photoChooserTask.Completed += new EventHandler<PhotoResult>(PhotoChooserTask_Completed);
+
+            this._cameraCaptureTask = new CameraCaptureTask();
+            this._cameraCaptureTask.Completed += new EventHandler<PhotoResult>(CameraCaptureTask_Completed);
         }
 
         private void ChoosePicture_Click(object sender, System.EventArgs e)
         {
             this._photoChooserTask.Show();
+        }
+
+        private void TakePicture_Click(object sender, System.EventArgs e)
+        {
+            this._cameraCaptureTask.Show();
         }
 
         private void PhotoChooserTask_Completed(object sender, PhotoResult e)
@@ -35,6 +44,16 @@ namespace Ashtag
             {
                 MessageBox.Show(e.ChosenPhoto.Length.ToString());
 
+                BitmapImage bmp = new BitmapImage();
+                bmp.SetSource(e.ChosenPhoto);
+                SelectedImage.Source = bmp;
+            }
+        }
+
+        private void CameraCaptureTask_Completed(object sender, PhotoResult e)
+        {
+            if (e.TaskResult == TaskResult.OK)
+            {
                 BitmapImage bmp = new BitmapImage();
                 bmp.SetSource(e.ChosenPhoto);
                 SelectedImage.Source = bmp;

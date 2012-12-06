@@ -10,7 +10,7 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait" Orientation="Portrait"
+    SupportedOrientations="Portrait" Orientation="Landscape"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
 
@@ -50,10 +50,10 @@
 				<ColumnDefinition Width="Auto"/>
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
-            <Image x:Name="SelectedImage" Margin="5" Width="0" Height="120" Grid.Row="0" Grid.Column="0"/>
+            <Image x:Name="SelectedImage" Margin="5" Width="Auto" Height="120" Grid.Row="0" Grid.Column="0"/>
 		</Grid>
         <Button Content="{Binding Path=LocalizedResources.SelectImagPage_ChoosePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,22,0,0" Width="480" Click="ChoosePicture_Click" />
-        <Button Content="{Binding Path=LocalizedResources.SelectImagePage_TakePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,99,0,0" Width="480" RenderTransformOrigin="0.504,-0.514"/>
+        <Button Content="{Binding Path=LocalizedResources.SelectImagePage_TakePictureButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Margin="0,99,0,0" Width="480" RenderTransformOrigin="0.504,-0.514" Click="TakePicture_Click" />
 	</Grid>
 
 </phone:PhoneApplicationPage>
