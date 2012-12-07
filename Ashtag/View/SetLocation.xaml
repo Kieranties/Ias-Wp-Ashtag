@@ -35,9 +35,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-        	<maps:Map x:Name="LocationMap" />
+        	<maps:Map x:Name="LocationMap" Hold="LocationMap_Hold" />
         </Grid>
-
-        <Button Content="{Binding Path=LocalizedResources.SetLocationPage_GetLocationButtonText, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Bottom" Margin="0,22,0,0" Width="480" Click="GetLocation_Click" />
     </Grid>
 </phone:PhoneApplicationPage>

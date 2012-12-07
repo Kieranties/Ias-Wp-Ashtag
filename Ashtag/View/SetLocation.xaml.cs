@@ -12,6 +12,7 @@ using Microsoft.Phone.Maps.Controls;
 using System.Device.Location;
 using System.Windows.Media;
 using System.Windows.Shapes;
+using System.Windows.Input;
 
 namespace Ashtag
 {
@@ -20,28 +21,8 @@ namespace Ashtag
         public SetLocation()
         {
             InitializeComponent();
-        }
 
-        private async void GetLocation_Click(object sender, RoutedEventArgs e)
-        {
-            Geolocator geolocator = new Geolocator();
-            geolocator.DesiredAccuracy = PositionAccuracy.High;
-
-            Geoposition position = null;
-
-            try
-            {
-                position = await geolocator.GetGeopositionAsync(maximumAge: TimeSpan.FromMinutes(5), timeout: TimeSpan.FromSeconds(10));
-            } // End Try
-            catch (UnauthorizedAccessException ex)
-            {
-                MessageBox.Show("Unable to get location");
-            } // End Catch
-
-            this.LocationMap.Center = new GeoCoordinate(position.Coordinate.Latitude, position.Coordinate.Longitude);
-            this.LocationMap.ZoomLevel = 15;
-
-            this.AddPushpinOverlay();
+            this.GetLocation();
         }
 
         private void AddPushpinOverlay()
@@ -75,6 +56,33 @@ namespace Ashtag
             pushpinGrid.Children.Add(pushpin);
 
             return pushpinGrid;
+        }
+
+        private void LocationMap_Hold(object sender, GestureEventArgs e)
+        {
+            this.GetLocation();
+        }
+
+        private async void GetLocation()
+        {
+            Geolocator geolocator = new Geolocator();
+            geolocator.DesiredAccuracy = PositionAccuracy.High;
+
+            Geoposition position = null;
+
+            try
+            {
+                position = await geolocator.GetGeopositionAsync(maximumAge: TimeSpan.FromMinutes(5), timeout: TimeSpan.FromSeconds(10));
+            } // End Try
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show("Unable to get location");
+            } // End Catch
+
+            this.LocationMap.Center = new GeoCoordinate(position.Coordinate.Latitude, position.Coordinate.Longitude);
+            this.LocationMap.ZoomLevel = 15;
+
+            this.AddPushpinOverlay();
         }
     }
 }
