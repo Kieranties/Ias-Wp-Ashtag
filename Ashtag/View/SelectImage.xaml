@@ -10,13 +10,13 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait" Orientation="Landscape"
+    SupportedOrientations="Portrait" Orientation="Portrait"
     mc:Ignorable="d"
     shell:SystemTray.IsVisible="True">
 
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar IsMenuEnabled="False">
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="next" Click="ApplicationBarIconButton_Click_1"/>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/next.png" Text="next" Click="NextButton_Click"/>
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 

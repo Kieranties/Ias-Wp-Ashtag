@@ -60,7 +60,7 @@ namespace Ashtag
             }
         }
 
-        private void ApplicationBarIconButton_Click_1(object sender, System.EventArgs e)
+        private void NextButton_Click(object sender, System.EventArgs e)
         {
             PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
         	root.Navigate(new Uri("/View/SetLocation.xaml", UriKind.Relative));
