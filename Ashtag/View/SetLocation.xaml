@@ -16,7 +16,7 @@
 
 	<phone:PhoneApplicationPage.ApplicationBar>
 		<shell:ApplicationBar IsMenuEnabled="False">
-			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/upload.png" Text="submit"/>
+			<shell:ApplicationBarIconButton IconUri="/Assets/AppBar/upload.png" Text="submit" Click="Submit_Click" />
 		</shell:ApplicationBar>
 	</phone:PhoneApplicationPage.ApplicationBar>
 
@@ -35,7 +35,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-        	<maps:Map x:Name="LocationMap" Hold="LocationMap_Hold" />
+        	<maps:Map x:Name="LocationMap" Hold="LocationMap_Hold" DoubleTap="LocationMap_DoubleTap" />
         </Grid>
     </Grid>
 </phone:PhoneApplicationPage>

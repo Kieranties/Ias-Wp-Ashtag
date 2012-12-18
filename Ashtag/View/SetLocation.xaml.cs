@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
+﻿using Ashtag.Resources;
+using Microsoft.Phone.Controls;
+using Microsoft.Phone.Maps.Controls;
+using System;
+using System.Device.Location;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using Windows.Devices.Geolocation;
-using Microsoft.Phone.Maps.Controls;
-using System.Device.Location;
+using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
-using System.Windows.Input;
+using Windows.Devices.Geolocation;
 
 namespace Ashtag
 {
@@ -23,6 +19,28 @@ namespace Ashtag
             InitializeComponent();
 
             this.GetLocation();
+        }
+
+        private async void GetLocation()
+        {
+            Geolocator geolocator = new Geolocator();
+            geolocator.DesiredAccuracy = PositionAccuracy.High;
+
+            Geoposition position = null;
+
+            try
+            {
+                position = await geolocator.GetGeopositionAsync(maximumAge: TimeSpan.FromSeconds(5), timeout: TimeSpan.FromSeconds(10));
+            } // End Try
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show("Unable to get location");
+            } // End Catch
+
+            this.LocationMap.Center = new GeoCoordinate(position.Coordinate.Latitude, position.Coordinate.Longitude);
+            this.LocationMap.ZoomLevel = 15;
+
+            this.AddPushpinOverlay();
         }
 
         private void AddPushpinOverlay()
@@ -46,8 +64,8 @@ namespace Ashtag
             pushpinGrid.ColumnDefinitions.Add(new ColumnDefinition());
             pushpinGrid.Background = new SolidColorBrush(Colors.Transparent);
 
-            Rectangle pushpin = new Rectangle();
-            pushpin.Fill = new SolidColorBrush(Colors.Blue);
+            Ellipse pushpin = new Ellipse();
+            pushpin.Fill = new SolidColorBrush(Colors.Red);
             pushpin.Height = 20;
             pushpin.Width = 20;
             pushpin.SetValue(Grid.RowProperty, 0);
@@ -63,26 +81,21 @@ namespace Ashtag
             this.GetLocation();
         }
 
-        private async void GetLocation()
+        private void LocationMap_DoubleTap(object sender, GestureEventArgs e)
         {
-            Geolocator geolocator = new Geolocator();
-            geolocator.DesiredAccuracy = PositionAccuracy.High;
+            this.GetLocation();
+        }
 
-            Geoposition position = null;
+        private void Submit_Click(object sender, EventArgs e)
+        {
+            string requestUrl = String.Format("{0}{1}", AppSettings.IASApiBaseUri, AppSettings.SubmitSightingUri);
 
-            try
-            {
-                position = await geolocator.GetGeopositionAsync(maximumAge: TimeSpan.FromMinutes(5), timeout: TimeSpan.FromSeconds(10));
-            } // End Try
-            catch (UnauthorizedAccessException ex)
-            {
-                MessageBox.Show("Unable to get location");
-            } // End Catch
+            // TODO: Upload the image and location to IAS website
 
-            this.LocationMap.Center = new GeoCoordinate(position.Coordinate.Latitude, position.Coordinate.Longitude);
-            this.LocationMap.ZoomLevel = 15;
+            MessageBox.Show("Your details have been sent.");
 
-            this.AddPushpinOverlay();
+            PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
+            root.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
         }
     }
 }
