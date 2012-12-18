@@ -70,6 +70,15 @@ namespace Ashtag.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to /sighting.
+        /// </summary>
+        internal static string SubmitSightingUri {
+            get {
+                return ResourceManager.GetString("SubmitSightingUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 100000.
         /// </summary>
         internal static string TaxonId {

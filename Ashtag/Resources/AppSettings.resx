@@ -120,6 +120,9 @@
   <data name="IASApiBaseUri" xml:space="preserve">
     <value>http://ias-ess.org/api</value>
   </data>
+  <data name="SubmitSightingUri" xml:space="preserve">
+    <value>/sighting</value>
+  </data>
   <data name="TaxonId" xml:space="preserve">
     <value>100000</value>
   </data>
