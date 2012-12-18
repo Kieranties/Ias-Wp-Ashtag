@@ -340,6 +340,24 @@ namespace Ashtag.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to photo.
+        /// </summary>
+        public static string SetLocationPage_ImageHeader {
+            get {
+                return ResourceManager.GetString("SetLocationPage_ImageHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to location.
+        /// </summary>
+        public static string SetLocationPage_LocationHeader {
+            get {
+                return ResourceManager.GetString("SetLocationPage_LocationHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to set location.
         /// </summary>
         public static string SetLocationPage_Title {

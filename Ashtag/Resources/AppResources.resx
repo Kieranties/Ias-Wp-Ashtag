@@ -218,4 +218,10 @@
   <data name="SetLocationPage_GetLocationButtonText" xml:space="preserve">
     <value>get location</value>
   </data>
+  <data name="SetLocationPage_ImageHeader" xml:space="preserve">
+    <value>photo</value>
+  </data>
+  <data name="SetLocationPage_LocationHeader" xml:space="preserve">
+    <value>location</value>
+  </data>
 </root>
