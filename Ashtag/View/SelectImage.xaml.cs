@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Navigation;
-using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
+﻿using Microsoft.Phone.Controls;
 using Microsoft.Phone.Tasks;
+using System;
+using System.IO;
+using System.IO.IsolatedStorage;
+using System.Windows;
 using System.Windows.Media.Imaging;
 
 namespace Ashtag
@@ -62,6 +58,23 @@ namespace Ashtag
 
         private void NextButton_Click(object sender, System.EventArgs e)
         {
+            IsolatedStorageFile fileSystem = IsolatedStorageFile.GetUserStoreForApplication();
+
+            // Ensure that previous image file is removed.
+            if (fileSystem.FileExists("Ashtag_Current_Image"))
+            {
+                fileSystem.DeleteFile("Ashtag_Current_Image");
+            } // End If
+
+            using (var isoFileStream = new IsolatedStorageFileStream("Ashtag_Current_Image", FileMode.Create, fileSystem))
+            {
+                using(var fileWriter = new StreamWriter(isoFileStream))
+                {
+                    BitmapImage image = this.SelectedImage.Source as BitmapImage;
+                    fileWriter.Write(image);
+                } // End using
+            } // End using
+
             PhoneApplicationFrame root = Application.Current.RootVisual as PhoneApplicationFrame;
         	root.Navigate(new Uri("/View/SetLocation.xaml", UriKind.Relative));
         }
